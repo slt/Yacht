@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRES = os.environ.get("REFRESH_TOKEN_EXPIRES", 2592000)
     SAME_SITE_COOKIES = os.environ.get("SAME_SITE_COOKIES", "lax")
     DISABLE_AUTH = os.environ.get("DISABLE_AUTH", False)
+    LISTEN_PORT = os.environ.get("LISTEN_PORT", 8000)
     BASE_TEMPLATE_VARIABLES = [
         {"variable": "!config", "replacement": "/yacht/AppData/Config"},
         {"variable": "!data", "replacement": "/yacht/AppData/Data"},

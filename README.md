@@ -85,6 +85,8 @@ You can utilize the following environment variables in Yacht. None of them are m
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | PUID         | Set userid that the container will run as.                                                                                                                                              |
 | PGID         | Set groupid that the container will run as.                                                                                                                                             |
+| LISTEN_PORT  | The port to listen on, defaults to port 8000.                                                                                                                                             |
+
 | SECRET_KEY   | Setting this to a random string ensures you won't be logged out in between reboots of Yacht.                                                                                            |
 | ADMIN_EMAIL  | This sets the email for the default Yacht user.                                                                                                                                         |
 | DISABLE_AUTH | This disables authentication on the backend of Yacht. It's not recommended unless you're using something like Authelia to manage authentication.                                        |
